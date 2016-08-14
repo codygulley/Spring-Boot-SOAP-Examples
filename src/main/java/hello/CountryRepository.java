@@ -29,7 +29,7 @@ public class CountryRepository {
 
     @PostConstruct
     public void initData() {
-
+//Country information complied from https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
         Country af = new Country();
         af.setName("Afghanistan");
         af.setCapital("Kabul");
@@ -433,36 +433,74 @@ public class CountryRepository {
         ci.setCapital("Yamoussoukro");
         ci.setCurrency(Currency.XOF);
         ci.setPopulation(23919000);
+        countries.add(ci);
 
         Country hr = new Country();
         hr.setName("Croatia");
         hr.setCapital("Zagreb");
         hr.setCurrency(Currency.HRK);
         hr.setPopulation(4190700);
+        countries.add(hr);
 
         Country cu = new Country();
         cu.setName("Cuba");
         cu.setCapital("Havana");
         cu.setCurrency(Currency.CUP);
         cu.setPopulation(11239004);
+        countries.add(cu);
 
         Country cw = new Country();
         cw.setName("Curaçao");
         cw.setCapital("Willemstad");
         cw.setCurrency(Currency.ANG);
         cw.setPopulation(154843);
+        countries.add(cw);
 
         Country cy = new Country();
         cy.setName("Cyprus");
         cy.setCapital("Nicosia");
         cy.setCurrency(Currency.EUR);
         cy.setPopulation(1141166);
+        countries.add(cy);
 
         Country cz = new Country();
         cz.setName("Czech Republic");
         cz.setCapital("Prague");
         cz.setCurrency(Currency.CZK);
         cz.setPopulation(10553443);
+        countries.add(cz);
+
+        Country dk = new Country();
+        dk.setName("Denmark");
+        dk.setCapital("Copenhagen");
+        dk.setCurrency(Currency.DKK);
+        dk.setPopulation(5707251);
+        countries.add(dk);
+
+        Country dj = new Country();
+        dj.setName("Djibouti");
+        dj.setCapital("Djibouti City");
+        dj.setCurrency(Currency.DJF);
+        dj.setPopulation(828324);
+        countries.add(dj);
+
+
+        Country dm = new Country();
+        dm.setName("Dominica");
+        dm.setCapital("Roseau");
+        dm.setCurrency(Currency.XCD);
+        dm.setPopulation(72660);
+        countries.add(dm);
+
+
+//this is not using the alpha code "do" as it is a java keyword
+        Country dominicaRepublic = new Country();
+        dominicaRepublic.setName("Dominican Republic");
+        dominicaRepublic.setCapital("Santo Domingo");
+        dominicaRepublic.setCurrency(Currency.DOP);
+        dominicaRepublic.setPopulation(10075045);
+        countries.add(dominicaRepublic);
+
 
         //Need to update these to us ISO 3166 Alpha-2 Code
 

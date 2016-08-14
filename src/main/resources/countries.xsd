@@ -64,7 +64,7 @@
             <xs:enumeration value="CUP"/>
             <xs:enumeration value="CVE"/>
             <xs:enumeration value="CZK"/>
-            <xs:enumeration value="DFJ"/>
+            <xs:enumeration value="DJF"/>
             <xs:enumeration value="DKK"/>
             <xs:enumeration value="DOP"/>
             <xs:enumeration value="DZD"/>
