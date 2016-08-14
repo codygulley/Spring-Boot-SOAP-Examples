@@ -360,6 +360,110 @@ public class CountryRepository {
         countries.add(td);
 
 
+        Country cl = new Country();
+        cl.setName("Chile");
+        cl.setCapital("Santiago");
+        cl.setCurrency(Currency.CLP);
+        cl.setPopulation(18006407);
+        countries.add(cl);
+
+
+        Country cn = new Country();
+        cn.setName("China");
+        cn.setCapital("Beijing");
+        cn.setCurrency(Currency.CNY);
+        cn.setPopulation(1339724852);
+        countries.add(cn);
+
+
+
+        Country cx = new Country();
+        cx.setName("Christmas Islands");
+        cx.setCapital("Flying Fish Cove");
+        cx.setCurrency(Currency.AUD);
+        cx.setPopulation(2072);
+        countries.add(cx);
+
+        Country cc = new Country();
+        cc.setName("Cocos Islands");
+        cc.setCapital("West Island");
+        cc.setCurrency(Currency.AUD);
+        cc.setPopulation(596);
+        countries.add(cc);
+
+        Country co = new Country();
+        co.setName("Colombia");
+        co.setCapital("Bogotá");
+        co.setCurrency(Currency.COP);
+        co.setPopulation(48786100);
+        countries.add(co);
+
+        Country km = new Country();
+        km.setName("Comoros");
+        km.setCapital("Moroni");
+        km.setCurrency(Currency.KMF);
+        km.setPopulation(798000);
+        countries.add(km);
+
+        Country cd = new Country();
+        cd.setName("Democratic Republic of the Congo");
+        cd.setCapital("Kinshasa");
+        cd.setCurrency(Currency.CDF);
+        cd.setPopulation(81680000);
+        countries.add(cd);
+
+
+        Country ck = new Country();
+        ck.setName("Cook Islands");
+        ck.setCapital("Avarua");
+        ck.setCurrency(Currency.NZD);
+        ck.setPopulation(14974);
+        countries.add(ck);
+
+        Country cr = new Country();
+        cr.setName("Costa Rica");
+        cr.setCapital("San José");
+        cr.setCurrency(Currency.CRC);
+        cr.setPopulation(4586353);
+        countries.add(cr);
+
+
+        Country ci = new Country();
+        ci.setName("Côte d'Ivoire");
+        ci.setCapital("Yamoussoukro");
+        ci.setCurrency(Currency.XOF);
+        ci.setPopulation(23919000);
+
+        Country hr = new Country();
+        hr.setName("Croatia");
+        hr.setCapital("Zagreb");
+        hr.setCurrency(Currency.HRK);
+        hr.setPopulation(4190700);
+
+        Country cu = new Country();
+        cu.setName("Cuba");
+        cu.setCapital("Havana");
+        cu.setCurrency(Currency.CUP);
+        cu.setPopulation(11239004);
+
+        Country cw = new Country();
+        cw.setName("Curaçao");
+        cw.setCapital("Willemstad");
+        cw.setCurrency(Currency.ANG);
+        cw.setPopulation(154843);
+
+        Country cy = new Country();
+        cy.setName("Cyprus");
+        cy.setCapital("Nicosia");
+        cy.setCurrency(Currency.EUR);
+        cy.setPopulation(1141166);
+
+        Country cz = new Country();
+        cz.setName("Czech Republic");
+        cz.setCapital("Prague");
+        cz.setCurrency(Currency.CZK);
+        cz.setPopulation(10553443);
+
         //Need to update these to us ISO 3166 Alpha-2 Code
 
         Country poland = new Country();
