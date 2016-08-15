@@ -3,6 +3,7 @@ package hello;
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import io.spring.guides.gs_producing_web_service.Country;
 import io.spring.guides.gs_producing_web_service.Currency;
@@ -492,6 +493,14 @@ public class CountryRepository {
         dm.setPopulation(72660);
         countries.add(dm);
 
+        //this is not using the alpha code "do" as it is a java keyword
+        Country dominicaRepublic = new Country();
+        dominicaRepublic.setName("Dominican Republic");
+        dominicaRepublic.setCapital("Santo Domingo");
+        dominicaRepublic.setCurrency(Currency.DOP);
+        dominicaRepublic.setPopulation(10075045);
+        countries.add(dominicaRepublic);
+
 
         Country ec = new Country();
         ec.setName("Ecuador");
@@ -634,113 +643,427 @@ public class CountryRepository {
         de.setCurrency(Currency.EUR);
         countries.add(de);
 
-
-
         Country gh = new Country();
         gh.setName("Ghana");
-
+        gh.setCapital("Accra");
+        gh.setCurrency(Currency.GHS);
+        gh.setPopulation(27043093);
         countries.add(gh);
 
         Country gi = new Country();
         gi.setName("Gibraltar");
-
+        gi.setCapital("Gibraltar");
+        gi.setCurrency(Currency.GIP);
+        gi.setPopulation(32194);
         countries.add(gi);
 
         Country gr = new Country();
         gr.setName("Greece");
-
+        gr.setCapital("Athens");
+        gr.setCurrency(Currency.EUR);
+        gr.setPopulation(10955000);
         countries.add(gr);
 
         Country gl = new Country();
         gl.setName("Greenland");
-
-
+        gl.setCapital("Nuuk");
+        gl.setCurrency(Currency.DKK);
+        gl.setPopulation(55847);
         countries.add(gl);
 
         Country gd = new Country();
         gd.setName("Grenada");
-
+        gd.setCapital("St. George's");
+        gd.setCurrency(Currency.XCD);
+        gd.setPopulation(109590);
         countries.add(gd);
 
         Country gp = new Country();
         gp.setName("Guadeloupe");
-
+        gp.setCapital("");
+        gp.setCurrency(Currency.XPF);
+        gp.setPopulation(403750);
         countries.add(gp);
 
         Country gu = new Country();
         gu.setName("Guam");
-
+        gu.setCapital("Hagåtña");
+        gu.setCurrency(Currency.USD);
+        gu.setPopulation(161785);
         countries.add(gu);
 
         Country gt = new Country();
         gt.setName("Guatemala");
-
+        gt.setCapital("Guatemala City");
+        gt.setCurrency(Currency.GTQ);
+        gt.setPopulation(15806675);
         countries.add(gt);
 
         Country gg = new Country();
         gg.setName("Guernsey");
-
+        gg.setCapital("St. Peter Port");
+        gg.setCurrency(Currency.GGP);
+        gg.setPopulation(62711);
         countries.add(gg);
 
         Country gn = new Country();
         gn.setName("Guinea");
-
+        gn.setCapital("Conakry");
+        gn.setCurrency(Currency.GNF);
+        gn.setPopulation(8746128);
         countries.add(gn);
 
         Country gw = new Country();
         gw.setName("Guinea-Bissau");
-
+        gw.setCapital("Bissau");
+        gw.setCurrency(Currency.XOF);
+        gw.setPopulation(1693398);
         countries.add(gw);
 
         Country gy = new Country();
         gy.setName("Guyana");
-
+        gy.setCapital("Georgetown");
+        gy.setCurrency(Currency.GYD);
+        gy.setPopulation(735554);
         countries.add(gy);
 
-//this is not using the alpha code "do" as it is a java keyword
-        Country dominicaRepublic = new Country();
-        dominicaRepublic.setName("Dominican Republic");
-        dominicaRepublic.setCapital("Santo Domingo");
-        dominicaRepublic.setCurrency(Currency.DOP);
-        dominicaRepublic.setPopulation(10075045);
-        countries.add(dominicaRepublic);
+        Country ht = new Country();
+        ht.setName("Haiti");
+        ht.setCapital("Port-au-Prince");
+        ht.setCurrency(Currency.HTG);
+        ht.setPopulation(10604000);
+        countries.add(ht);
+
+        Country hm = new Country();
+        hm.setName("Heard Island and McDonald Islands");
+        hm.setCapital("");
+        hm.setCurrency(Currency.AUD);
+        hm.setPopulation(0);
+        countries.add(hm);
+
+        Country va = new Country();
+        va.setName("Holy See");
+        va.setCapital("Vatican City");
+        va.setCurrency(Currency.EUR);
+        va.setPopulation(1000);
+        countries.add(va);
+
+        Country hn = new Country();
+        hn.setName("Honduras");
+        hn.setCapital("Tegucigalpa");
+        hn.setCurrency(Currency.HNL);
+        hn.setPopulation(8249574);
+        countries.add(hn);
+
+        Country hk = new Country();
+        hk.setName("Hong Kong");
+        hk.setCapital("");
+        hk.setCurrency(Currency.HKD);
+        hk.setPopulation(7234800);
+        countries.add(hk);
+
+        Country hu = new Country();
+        hu.setName("Hungary");
+        hu.setCapital("Budapest");
+        hu.setCurrency(Currency.HUF);
+        hu.setPopulation(9855571);
+        countries.add(hu);
+
+        Country is = new Country();
+        is.setName("Iceland");
+        is.setCapital("Reykjavík");
+        is.setCurrency(Currency.ISK);
+        is.setPopulation(332529);
+        countries.add(is);
+
+        Country in = new Country();
+        in.setName("India");
+        in.setCapital("New Delhi");
+        in.setCurrency(Currency.INR);
+        in.setPopulation(1293057000);
+        countries.add(in);
+
+        Country id = new Country();
+        id.setName("Indonesia");
+        id.setCapital("Jakarta");
+        id.setCurrency(Currency.IDR);
+        id.setPopulation(255461700);
+        countries.add(id);
+
+        Country ir = new Country();
+        ir.setName("Iran");
+        ir.setCapital("Tehran");
+        ir.setCurrency(Currency.IRR);
+        ir.setPopulation(79460700);
+        countries.add(ir);
+
+        Country iq = new Country();
+        iq.setName("Iraq");
+        iq.setCapital("Baghdad");
+        iq.setCurrency(Currency.IQD);
+        iq.setPopulation(37056169);
+        countries.add(iq);
+
+        Country ie = new Country();
+        ie.setName("Ireland");
+        ie.setCapital("Dublin");
+        ie.setCurrency(Currency.EUR);
+        ie.setPopulation(4757976);
+        countries.add(ie);
+
+        Country im = new Country();
+        im.setName("Isle of Man");
+        im.setCapital("Douglas");
+        im.setCurrency(Currency.GBP);
+        countries.add(im);
+
+        // TODO: 8/15/16 update
+        Country il = new Country();
+        il.setName("Israel");
+        countries.add(il);
 
 
-        //Need to update these to us ISO 3166 Alpha-2 Code
+        Country it = new Country();
+        it.setName("Italy");
+        it.setCapital("Rome");
+        it.setCurrency(Currency.EUR);
+        it.setPopulation(60674003);
+        countries.add(it);
 
-        Country poland = new Country();
-        poland.setName("Poland");
-        poland.setCapital("Warsaw");
-        poland.setCurrency(Currency.PLN);
-        poland.setPopulation(38186860);
+        // TODO: 8/15/16 update
+        Country jm = new Country();
+        jm.setName("Jamaica");
+        countries.add(jm);
 
-        countries.add(poland);
+        Country jp = new Country();
+        jp.setName("Japan");
+        jp.setCapital("Tokyo");
+        jp.setCurrency(Currency.JPY);
+        jp.setPopulation(126990000);
+        countries.add(jp);
 
-        Country spain = new Country();
-        spain.setName("Spain");
-        spain.setCapital("Madrid");
-        spain.setCurrency(Currency.EUR);
-        spain.setPopulation(46704314);
+        // TODO: 8/15/16 update
+        Country je = new Country();
+        je.setName("Jersey");
+        countries.add(je);
 
-        countries.add(spain);
+        // TODO: 8/15/16 update
+        Country jo = new Country();
+        jo.setName("Jordan");
+        countries.add(jo);
+
+        // TODO: 8/15/16 update
+        Country kz = new Country();
+        kz.setName("Kazakhstan");
+        countries.add(kz);
 
 
+        Country ke = new Country();
+        ke.setName("Kenya");
+        ke.setCapital("Nairobi");
+        ke.setCurrency(Currency.KES);
+        ke.setPopulation(44156577);
+        countries.add(ke);
 
-        Country uk = new Country();
-        uk.setName("United Kingdom");
-        uk.setCapital("London");
-        uk.setCurrency(Currency.GBP);
-        uk.setPopulation(63705000);
+        // TODO: 8/15/16 update
+        Country ki = new Country();
+        ki.setName("Kiribati");
+        countries.add(ki);
 
-        countries.add(uk);
+        // TODO: 8/15/16 update
+        Country kp = new Country();
+        kp.setName("North Korea");
+        countries.add(kp);
 
-        Country usa = new Country();
-        usa.setName("United States of America");
-        usa.setCapital("Washington D.C.");
-        usa.setCurrency(Currency.USD);
-        usa.setPopulation(324394946);
+        // TODO: 8/15/16 update
+        Country kw = new Country();
+        kw.setName("Kuwait");
+        countries.add(kw);
 
-        countries.add(usa);
+        // TODO: 8/15/16 update
+        Country kg = new Country();
+        kg.setName("Kyrgyzstan");
+        countries.add(kg);
+
+        // TODO: 8/15/16 update
+        Country la = new Country();
+        la.setName("Lao");
+        countries.add(la);
+
+        // TODO: 8/15/16 update
+        Country lv = new Country();
+        lv.setName("Latvia");
+        countries.add(lv);
+
+        // TODO: 8/15/16 update
+        Country lb = new Country();
+        lb.setName("Lebanon");
+        countries.add(lb);
+
+        // TODO: 8/15/16 update
+        Country ls = new Country();
+        ls.setName("Lesotho");
+        countries.add(ls);
+
+        // TODO: 8/15/16 update
+        Country lr = new Country();
+        lr.setName("Liberia");
+        countries.add(lr);
+
+        // TODO: 8/15/16 update
+        Country ly = new Country();
+        ly.setName("Libya");
+        countries.add(ly);
+
+        // TODO: 8/15/16 update
+        Country li = new Country();
+        li.setName("Liechtenstein");
+        countries.add(li);
+
+        // TODO: 8/15/16 update
+        Country lt = new Country();
+        lt.setName("Lithuania");
+        countries.add(lt);
+
+        // TODO: 8/15/16 update
+        Country lu = new Country();
+        lu.setName("Luxembourg");
+        countries.add(lu);
+
+        Country mm = new Country();
+        mm.setName("Myanmar");
+        mm.setCapital("Naypyidaw");
+        mm.setCurrency(Currency.MMK);
+        mm.setPopulation(51486253);
+        countries.add(mm);
+
+        Country mx = new Country();
+        mx.setName("Mexico");
+        mx.setCapital("Mexico City");
+        mx.setCurrency(Currency.MXN);
+        mx.setPopulation(119530753);
+        countries.add(mx);
+
+        Country ng = new Country();
+        ng.setName("Nigeria");
+        ng.setCapital("Abuja");
+        ng.setCurrency(Currency.NGN);
+        ng.setPopulation(182202000);
+        countries.add(ng);
+
+        Country pk = new Country();
+        pk.setName("Pakistan");
+        pk.setCapital("Islamabad");
+        pk.setCurrency(Currency.PKR);
+        pk.setPopulation(202971003);
+        countries.add(pk);
+
+        Country ph = new Country();
+        ph.setName("Philippines");
+        ph.setCapital("Manila");
+        ph.setCurrency(Currency.PHP);
+        ph.setPopulation(102862000);
+        countries.add(ph);
+
+        Country pl = new Country();
+        pl.setName("Poland");
+        pl.setCapital("Warsaw");
+        pl.setCurrency(Currency.PLN);
+        pl.setPopulation(38186860);
+        countries.add(pl);
+
+        Country ru = new Country();
+        ru.setName("Russia");
+        ru.setCapital("Moscow");
+        ru.setCurrency(Currency.RUB);
+        ru.setPopulation(144192450);
+        countries.add(ru);
+
+        Country za = new Country();
+        za.setName("South Africa");
+        za.setCapital("Pretoria");
+        za.setCurrency(Currency.ZAR);
+        za.setPopulation(55653654);
+        countries.add(za);
+
+        Country kr = new Country();
+        kr.setName("South Korea");
+        kr.setCapital("Seoul");
+        kr.setCurrency(Currency.KRW);
+        kr.setPopulation(50801405);
+        countries.add(kr);
+
+        Country es = new Country();
+        es.setName("Spain");
+        es.setCapital("Madrid");
+        es.setCurrency(Currency.EUR);
+        es.setPopulation(46704314);
+        countries.add(es);
+
+        Country sd = new Country();
+        sd.setName("Sudan");
+        sd.setCapital("Khartoum");
+        sd.setCurrency(Currency.SDG);
+        sd.setPopulation(39598700);
+        countries.add(sd);
+
+        Country tz = new Country();
+        tz.setName("Tanzania");
+        tz.setCapital("Dodoma");
+        tz.setCurrency(Currency.TZS);
+        tz.setPopulation(48775567);
+        countries.add(tz);
+
+        Country th = new Country();
+        th.setName("Thailand");
+        th.setCapital("Bangkok");
+        th.setCurrency(Currency.THB);
+        th.setPopulation(65729098);
+        countries.add(th);
+
+        Country tr = new Country();
+        tr.setName("Turkey");
+        tr.setCapital("Istanbul");
+        tr.setCurrency(Currency.TRY);
+        tr.setPopulation(78741053);
+        countries.add(tr);
+
+        Country ug = new Country();
+        ug.setName("Uganda");
+        ug.setCapital("Kampala");
+        ug.setCurrency(Currency.UGX);
+        ug.setPopulation(37873253);
+        countries.add(ug);
+
+        Country ua = new Country();
+        ua.setName("Ukraine");
+        ua.setCapital("Kiev");
+        ua.setCurrency(Currency.UAH);
+        ua.setPopulation(42673911);
+        countries.add(ua);
+
+        Country gb = new Country();
+        gb.setName("United Kingdom");
+        gb.setCapital("London");
+        gb.setCurrency(Currency.GBP);
+        gb.setPopulation(63705000);
+        countries.add(gb);
+
+        Country us = new Country();
+        us.setName("United States of America");
+        us.setCapital("Washington D.C.");
+        us.setCurrency(Currency.USD);
+        us.setPopulation(324394946);
+        countries.add(us);
+
+        Country vn = new Country();
+        vn.setName("Vietnam");
+        vn.setCapital("Hanoi");
+        vn.setCurrency(Currency.VND);
+        vn.setPopulation(92700000);
+        countries.add(vn);
+
+
 
     }
 
