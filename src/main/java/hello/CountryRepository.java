@@ -493,6 +493,210 @@ public class CountryRepository {
         countries.add(dm);
 
 
+        Country ec = new Country();
+        ec.setName("Ecuador");
+        ec.setCapital("Quito");
+        ec.setCurrency(Currency.USD);
+        ec.setPopulation(16144000);
+        countries.add(ec);
+
+
+        Country eg = new Country();
+        eg.setName("Egypt");
+        eg.setCapital("Cairo");
+        eg.setCurrency(Currency.EGP);
+        eg.setPopulation(91503000);
+        countries.add(eg);
+
+
+        Country sv = new Country();
+        sv.setName("El Salvador");
+        sv.setCapital("San Salvador");
+        sv.setCurrency(Currency.USD);
+        sv.setPopulation(6377195);
+        countries.add(sv);
+
+        Country gq = new Country();
+        gq.setName("Equatorial Guinea");
+        gq.setCapital("Malabo");
+        gq.setCurrency(Currency.XAF);
+        gq.setPopulation(1222442);
+        countries.add(gq);
+
+        Country er = new Country();
+        er.setName("Eritrea");
+        er.setCapital("Asmara");
+        er.setCurrency(Currency.ERN);
+        er.setPopulation(6380803);
+        countries.add(er);
+
+        Country ee = new Country();
+        ee.setName("Estonia");
+        ee.setCapital("Tallinn");
+        ee.setCurrency(Currency.EUR);
+        ee.setPopulation(1315944);
+        countries.add(ee);
+
+        Country et = new Country();
+        et.setName("Ethiopia");
+        et.setCapital("Addis Ababa");
+        et.setCurrency(Currency.ETB);
+        et.setPopulation(99465819);
+        countries.add(et);
+
+        Country fk = new Country();
+        fk.setName("Falkland Islands");
+        fk.setCapital("Stanley");
+        fk.setCurrency(Currency.FKP);
+        fk.setPopulation(2932);
+        countries.add(fk);
+
+
+        Country fo = new Country();
+        fo.setName("Faroe Islands");
+        fo.setCapital("Tórshavn");
+        fo.setCurrency(Currency.DKK);
+        fo.setPopulation(50196);
+        countries.add(fo);
+
+
+        Country fj = new Country();
+        fj.setName("Fiji");
+        fj.setCapital("Suva");
+        fj.setCurrency(Currency.FJD);
+        fj.setPopulation(909389);
+        countries.add(fj);
+
+
+        Country fi = new Country();
+        fi.setName("Finland");
+        fi.setCapital("Helsinki");
+        fi.setCurrency(Currency.EUR);
+        fi.setPopulation(5488543);
+        countries.add(fi);
+
+        Country fr = new Country();
+        fr.setName("France");
+        fr.setCapital("Paris");
+        fr.setCurrency(Currency.EUR);
+        fr.setPopulation(66736000);
+        countries.add(fr);
+
+
+        Country gf = new Country();
+        gf.setName("French Guiana");
+        gf.setCapital("Cayenne");
+        gf.setCurrency(Currency.EUR);
+        gf.setPopulation(259000);
+        countries.add(gf);
+
+
+        Country pf = new Country();
+        pf.setName("French Polynesia");
+        pf.setCapital("Pape'ete");
+        pf.setCurrency(Currency.XPF);
+        pf.setPopulation(268270);
+        countries.add(pf);
+
+
+        Country tf = new Country();
+        tf.setName("French Southern Territories");
+        tf.setCapital("\tSaint-Pierre");
+        tf.setCurrency(Currency.EUR);
+        tf.setPopulation(310);
+        countries.add(tf);
+
+        Country ga = new Country();
+        ga.setName("Gabon");
+        ga.setCapital("Libreville");
+        ga.setPopulation(1475000);
+        ga.setCurrency(Currency.XAF);
+        countries.add(ga);
+
+        Country gm = new Country();
+        gm.setName("Gambia");
+        gm.setCapital("Banjul");
+        gm.setPopulation(1882450);
+        gm.setCurrency(Currency.GMD);
+        countries.add(gm);
+
+        Country ge = new Country();
+        ge.setName("Georgia");
+        ge.setCapital("Tbilisi");
+        ge.setPopulation(3720400);
+        ge.setCurrency(Currency.GEL);
+        countries.add(ge);
+
+        Country de = new Country();
+        de.setName("Germany");
+        de.setCapital("Berlin");
+        de.setPopulation(81770900);
+        de.setCurrency(Currency.EUR);
+        countries.add(de);
+
+
+
+        Country gh = new Country();
+        gh.setName("Ghana");
+
+        countries.add(gh);
+
+        Country gi = new Country();
+        gi.setName("Gibraltar");
+
+        countries.add(gi);
+
+        Country gr = new Country();
+        gr.setName("Greece");
+
+        countries.add(gr);
+
+        Country gl = new Country();
+        gl.setName("Greenland");
+
+
+        countries.add(gl);
+
+        Country gd = new Country();
+        gd.setName("Grenada");
+
+        countries.add(gd);
+
+        Country gp = new Country();
+        gp.setName("Guadeloupe");
+
+        countries.add(gp);
+
+        Country gu = new Country();
+        gu.setName("Guam");
+
+        countries.add(gu);
+
+        Country gt = new Country();
+        gt.setName("Guatemala");
+
+        countries.add(gt);
+
+        Country gg = new Country();
+        gg.setName("Guernsey");
+
+        countries.add(gg);
+
+        Country gn = new Country();
+        gn.setName("Guinea");
+
+        countries.add(gn);
+
+        Country gw = new Country();
+        gw.setName("Guinea-Bissau");
+
+        countries.add(gw);
+
+        Country gy = new Country();
+        gy.setName("Guyana");
+
+        countries.add(gy);
+
 //this is not using the alpha code "do" as it is a java keyword
         Country dominicaRepublic = new Country();
         dominicaRepublic.setName("Dominican Republic");
