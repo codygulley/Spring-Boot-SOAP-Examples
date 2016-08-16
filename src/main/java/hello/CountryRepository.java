@@ -4,6 +4,7 @@ import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import java.util.concurrent.ExecutionException;
 
 import io.spring.guides.gs_producing_web_service.Country;
 import io.spring.guides.gs_producing_web_service.Currency;
@@ -14,7 +15,7 @@ import org.springframework.util.Assert;
 public class CountryRepository {
     private static final List<Country> countries = new ArrayList<Country>();
 
-    public Country findCountry(String name) {
+    public Country findCountry(String name) throws Exception {
         Assert.notNull(name);
 
         Country result = null;
@@ -24,7 +25,9 @@ public class CountryRepository {
                 result = country;
             }
         }
-
+        if(result==null){
+            throw new Exception("ERROR: Country \"" + name +"\" not found");
+        }
         return result;
     }
 
@@ -95,6 +98,7 @@ public class CountryRepository {
         aq.setName("Antarctica");
         aq.setCapital("");
         aq.setPopulation(135);
+        aq.setCurrency(Currency.NOCURRENCY);
         countries.add(aq);
 
         Country ag = new Country();
