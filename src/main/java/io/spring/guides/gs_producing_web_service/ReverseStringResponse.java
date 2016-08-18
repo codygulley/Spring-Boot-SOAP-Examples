@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="country" type="{http://spring.io/guides/gs-producing-web-service}country"/>
+ *         &lt;element name="transformedString" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "country"
+    "transformedString"
 })
-@XmlRootElement(name = "getCountryResponse")
-public class GetCountryResponse {
+@XmlRootElement(name = "reverseStringResponse")
+public class ReverseStringResponse {
 
     @XmlElement(required = true)
-    protected Country country;
+    protected String transformedString;
 
     /**
-     * Gets the value of the country property.
+     * Gets the value of the transformedString property.
      * 
      * @return
      *     possible object is
-     *     {@link Country }
+     *     {@link String }
      *     
      */
-    public Country getCountry() {
-        return country;
+    public String getTransformedString() {
+        return transformedString;
     }
 
     /**
-     * Sets the value of the country property.
+     * Sets the value of the transformedString property.
      * 
      * @param value
      *     allowed object is
-     *     {@link Country }
+     *     {@link String }
      *     
      */
-    public void setCountry(Country value) {
-        this.country = value;
+    public void setTransformedString(String value) {
+        this.transformedString = value;
     }
 
 }

@@ -185,6 +185,7 @@
             <xs:enumeration value="YER"/>
             <xs:enumeration value="ZAR"/>
             <xs:enumeration value="ZMW"/>
+            <xs:enumeration value="NOCURRENCY"/>
         </xs:restriction>
     </xs:simpleType>
 </xs:schema>

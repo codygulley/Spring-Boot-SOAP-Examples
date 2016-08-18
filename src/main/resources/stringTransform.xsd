@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+    <xs:element name="reverseStringRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="string" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="reverseStringResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="transformedString" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="toUppercaseRequest">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="string" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+    <xs:element name="toUppercaseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="transformedString" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="toLowercaseRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="string" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="toLowercaseResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="transformedString" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
