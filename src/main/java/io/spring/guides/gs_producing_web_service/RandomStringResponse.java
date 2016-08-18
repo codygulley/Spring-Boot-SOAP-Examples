@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="string" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="randomString" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "string"
+    "randomString"
 })
-@XmlRootElement(name = "toUppercaseRequest")
-public class ToUppercaseRequest {
+@XmlRootElement(name = "randomStringResponse")
+public class RandomStringResponse {
 
     @XmlElement(required = true)
-    protected String string;
+    protected String randomString;
 
     /**
-     * Gets the value of the string property.
+     * Gets the value of the randomString property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getString() {
-        return string;
+    public String getRandomString() {
+        return randomString;
     }
 
     /**
-     * Sets the value of the string property.
+     * Sets the value of the randomString property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setString(String value) {
-        this.string = value;
+    public void setRandomString(String value) {
+        this.randomString = value;
     }
 
 }

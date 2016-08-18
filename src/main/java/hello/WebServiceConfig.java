@@ -54,4 +54,20 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     public XsdSchema stringTransformSchema() {
         return new SimpleXsdSchema(new ClassPathResource("stringTransform.xsd"));
     }
+
+    @Bean(name = "randomGenerator")
+    public DefaultWsdl11Definition defaultWsdl13Definition(XsdSchema randomGeneratorSchema) {
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("randomGeneratorPort");
+        wsdl11Definition.setLocationUri("/ws");
+        wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+        wsdl11Definition.setSchema(randomGeneratorSchema);
+        return wsdl11Definition;
+    }
+
+    @Bean
+    public XsdSchema randomGeneratorSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("randomGenerator.xsd"));
+    }
+
 }

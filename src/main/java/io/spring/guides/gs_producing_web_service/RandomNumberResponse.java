@@ -8,6 +8,7 @@
 
 package io.spring.guides.gs_producing_web_service;
 
+import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -25,7 +26,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="string" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="randomNumber" type="{http://www.w3.org/2001/XMLSchema}integer"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +37,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "string"
+    "randomNumber"
 })
-@XmlRootElement(name = "toUppercaseRequest")
-public class ToUppercaseRequest {
+@XmlRootElement(name = "randomNumberResponse")
+public class RandomNumberResponse {
 
     @XmlElement(required = true)
-    protected String string;
+    protected BigInteger randomNumber;
 
     /**
-     * Gets the value of the string property.
+     * Gets the value of the randomNumber property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public String getString() {
-        return string;
+    public BigInteger getRandomNumber() {
+        return randomNumber;
     }
 
     /**
-     * Sets the value of the string property.
+     * Sets the value of the randomNumber property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link BigInteger }
      *     
      */
-    public void setString(String value) {
-        this.string = value;
+    public void setRandomNumber(BigInteger value) {
+        this.randomNumber = value;
     }
 
 }
