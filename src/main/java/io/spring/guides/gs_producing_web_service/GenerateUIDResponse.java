@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="transformedString" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="UID" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "transformedString"
+    "uid"
 })
-@XmlRootElement(name = "toLowercaseResponse")
-public class ToLowercaseResponse {
+@XmlRootElement(name = "generateUIDResponse")
+public class GenerateUIDResponse {
 
-    @XmlElement(required = true)
-    protected String transformedString;
+    @XmlElement(name = "UID", required = true)
+    protected String uid;
 
     /**
-     * Gets the value of the transformedString property.
+     * Gets the value of the uid property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getTransformedString() {
-        return transformedString;
+    public String getUID() {
+        return uid;
     }
 
     /**
-     * Sets the value of the transformedString property.
+     * Sets the value of the uid property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setTransformedString(String value) {
-        this.transformedString = value;
+    public void setUID(String value) {
+        this.uid = value;
     }
 
 }
