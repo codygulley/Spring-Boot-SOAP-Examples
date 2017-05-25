@@ -1,0 +1,237 @@
+<!--http://localhost:8080/ws/createWorkItemWithParties.wsdl-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://spring.io/guides/gs-producing-web-service"
+           targetNamespace="http://spring.io/guides/gs-producing-web-service" elementFormDefault="qualified">
+
+    <xs:element name="createWorkItemWithPartiesRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="itemType"/>
+                <xs:element name="subType"/>
+                <xs:element name="node"/>
+                <xs:element name="destinationQueue"/>
+                <xs:element name="status"/>
+                <xs:element name="fieldDelimiter"/>
+                <xs:element name="valueDelimiter"/>
+                <xs:element name="fieldValuePairs"/>
+                <xs:element name="environment"/>
+                <xs:element name="parties">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="party1">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party1-name"/>
+                                        <xs:element name="party1-accountNumber"/>
+                                        <xs:element name="party1-accountType"/>
+                                        <xs:element name="party1-customerId"/>
+                                        <xs:element name="party1-firstName"/>
+                                        <xs:element name="party1-middleName"/>
+                                        <xs:element name="party1-lastName"/>
+                                        <xs:element name="party1-organization"/>
+                                        <xs:element name="party1-phoneNumber"/>
+                                        <xs:element name="party1-streetAddress1"/>
+                                        <xs:element name="party1-streetAddress2"/>
+                                        <xs:element name="party1-streetAddress3"/>
+                                        <xs:element name="party1-streetAddress4"/>
+                                        <xs:element name="party1-streetAddress5"/>
+                                        <xs:element name="party1-streetAddress6"/>
+                                        <xs:element name="party1-city"/>
+                                        <xs:element name="party1-state"/>
+                                        <xs:element name="party1-postalCode"/>
+                                        <xs:element name="party1-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="party2">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party2-name"/>
+                                        <xs:element name="party2-accountNumber"/>
+                                        <xs:element name="party2-accountType"/>
+                                        <xs:element name="party2-customerId"/>
+                                        <xs:element name="party2-firstName"/>
+                                        <xs:element name="party2-middleName"/>
+                                        <xs:element name="party2-lastName"/>
+                                        <xs:element name="party2-organization"/>
+                                        <xs:element name="party2-phoneNumber"/>
+                                        <xs:element name="party2-streetAddress1"/>
+                                        <xs:element name="party2-streetAddress2"/>
+                                        <xs:element name="party2-streetAddress3"/>
+                                        <xs:element name="party2-streetAddress4"/>
+                                        <xs:element name="party2-streetAddress5"/>
+                                        <xs:element name="party2-streetAddress6"/>
+                                        <xs:element name="party2-city"/>
+                                        <xs:element name="party2-state"/>
+                                        <xs:element name="party2-postalCode"/>
+                                        <xs:element name="party2-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="party3">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party3-name"/>
+                                        <xs:element name="party3-accountNumber"/>
+                                        <xs:element name="party3-accountType"/>
+                                        <xs:element name="party3-customerId"/>
+                                        <xs:element name="party3-firstName"/>
+                                        <xs:element name="party3-middleName"/>
+                                        <xs:element name="party3-lastName"/>
+                                        <xs:element name="party3-organization"/>
+                                        <xs:element name="party3-phoneNumber"/>
+                                        <xs:element name="party3-streetAddress1"/>
+                                        <xs:element name="party3-streetAddress2"/>
+                                        <xs:element name="party3-streetAddress3"/>
+                                        <xs:element name="party3-streetAddress4"/>
+                                        <xs:element name="party3-streetAddress5"/>
+                                        <xs:element name="party3-streetAddress6"/>
+                                        <xs:element name="party3-city"/>
+                                        <xs:element name="party3-state"/>
+                                        <xs:element name="party3-postalCode"/>
+                                        <xs:element name="party3-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="party4">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party4-name"/>
+                                        <xs:element name="party4-accountNumber"/>
+                                        <xs:element name="party4-accountType"/>
+                                        <xs:element name="party4-customerId"/>
+                                        <xs:element name="party4-firstName"/>
+                                        <xs:element name="party4-middleName"/>
+                                        <xs:element name="party4-lastName"/>
+                                        <xs:element name="party4-organization"/>
+                                        <xs:element name="party4-phoneNumber"/>
+                                        <xs:element name="party4-streetAddress1"/>
+                                        <xs:element name="party4-streetAddress2"/>
+                                        <xs:element name="party4-streetAddress3"/>
+                                        <xs:element name="party4-streetAddress4"/>
+                                        <xs:element name="party4-streetAddress5"/>
+                                        <xs:element name="party4-streetAddress6"/>
+                                        <xs:element name="party4-city"/>
+                                        <xs:element name="party4-state"/>
+                                        <xs:element name="party4-postalCode"/>
+                                        <xs:element name="party4-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="party5">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party5-name"/>
+                                        <xs:element name="party5-accountNumber"/>
+                                        <xs:element name="party5-accountType"/>
+                                        <xs:element name="party5-customerId"/>
+                                        <xs:element name="party5-firstName"/>
+                                        <xs:element name="party5-middleName"/>
+                                        <xs:element name="party5-lastName"/>
+                                        <xs:element name="party5-organization"/>
+                                        <xs:element name="party5-phoneNumber"/>
+                                        <xs:element name="party5-streetAddress1"/>
+                                        <xs:element name="party5-streetAddress2"/>
+                                        <xs:element name="party5-streetAddress3"/>
+                                        <xs:element name="party5-streetAddress4"/>
+                                        <xs:element name="party5-streetAddress5"/>
+                                        <xs:element name="party5-streetAddress6"/>
+                                        <xs:element name="party5-city"/>
+                                        <xs:element name="party5-state"/>
+                                        <xs:element name="party5-postalCode"/>
+                                        <xs:element name="party5-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="party6">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party6-name"/>
+                                        <xs:element name="party6-accountNumber"/>
+                                        <xs:element name="party6-accountType"/>
+                                        <xs:element name="party6-customerId"/>
+                                        <xs:element name="party6-firstName"/>
+                                        <xs:element name="party6-middleName"/>
+                                        <xs:element name="party6-lastName"/>
+                                        <xs:element name="party6-organization"/>
+                                        <xs:element name="party6-phoneNumber"/>
+                                        <xs:element name="party6-streetAddress1"/>
+                                        <xs:element name="party6-streetAddress2"/>
+                                        <xs:element name="party6-streetAddress3"/>
+                                        <xs:element name="party6-streetAddress4"/>
+                                        <xs:element name="party6-streetAddress5"/>
+                                        <xs:element name="party6-streetAddress6"/>
+                                        <xs:element name="party6-city"/>
+                                        <xs:element name="party6-state"/>
+                                        <xs:element name="party6-postalCode"/>
+                                        <xs:element name="party6-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="party7">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party7-name"/>
+                                        <xs:element name="party7-accountNumber"/>
+                                        <xs:element name="party7-accountType"/>
+                                        <xs:element name="party7-customerId"/>
+                                        <xs:element name="party7-firstName"/>
+                                        <xs:element name="party7-middleName"/>
+                                        <xs:element name="party7-lastName"/>
+                                        <xs:element name="party7-organization"/>
+                                        <xs:element name="party7-phoneNumber"/>
+                                        <xs:element name="party7-streetAddress1"/>
+                                        <xs:element name="party7-streetAddress2"/>
+                                        <xs:element name="party7-streetAddress3"/>
+                                        <xs:element name="party7-streetAddress4"/>
+                                        <xs:element name="party7-streetAddress5"/>
+                                        <xs:element name="party7-streetAddress6"/>
+                                        <xs:element name="party7-city"/>
+                                        <xs:element name="party7-state"/>
+                                        <xs:element name="party7-postalCode"/>
+                                        <xs:element name="party7-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="party8">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="party8-name"/>
+                                        <xs:element name="party8-accountNumber"/>
+                                        <xs:element name="party8-accountType"/>
+                                        <xs:element name="party8-customerId"/>
+                                        <xs:element name="party8-firstName"/>
+                                        <xs:element name="party8-middleName"/>
+                                        <xs:element name="party8-lastName"/>
+                                        <xs:element name="party8-organization"/>
+                                        <xs:element name="party8-phoneNumber"/>
+                                        <xs:element name="party8-streetAddress1"/>
+                                        <xs:element name="party8-streetAddress2"/>
+                                        <xs:element name="party8-streetAddress3"/>
+                                        <xs:element name="party8-streetAddress4"/>
+                                        <xs:element name="party8-streetAddress5"/>
+                                        <xs:element name="party8-streetAddress6"/>
+                                        <xs:element name="party8-city"/>
+                                        <xs:element name="party8-state"/>
+                                        <xs:element name="party8-postalCode"/>
+                                        <xs:element name="party8-country"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+    <xs:element name="createWorkItemWithPartiesResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="workItemNumber" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

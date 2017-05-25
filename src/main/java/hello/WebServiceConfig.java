@@ -40,6 +40,24 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     }
 
 
+    @Bean(name = "createWorkItemWithParties")
+    public DefaultWsdl11Definition defaultWsdl14Definition(XsdSchema createWorkItemWithPartiesSchema) {
+        DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
+        wsdl11Definition.setPortTypeName("CreateWorkItemWithPartiesPort");
+        wsdl11Definition.setLocationUri("/ws");
+        wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+        wsdl11Definition.setSchema(createWorkItemWithPartiesSchema);
+        return wsdl11Definition;
+    }
+
+    @Bean
+    public XsdSchema createWorkItemWithPartiesSchema() {
+        return new SimpleXsdSchema(new ClassPathResource("parties.xsd"));
+    }
+
+
+
+
     @Bean(name = "stringTransform")
     public DefaultWsdl11Definition defaultWsdl12Definition(XsdSchema stringTransformSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
