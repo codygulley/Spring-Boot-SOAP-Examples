@@ -89,7 +89,7 @@ public class WebServiceConfig extends WsConfigurerAdapter {
     }
 
     @Bean(name = "generateUID")
-    public DefaultWsdl11Definition defaultWsdl14Definition(XsdSchema generateUIDSchema) {
+    public DefaultWsdl11Definition defaultWsdl15Definition(XsdSchema generateUIDSchema) {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("generateUIDPort");
         wsdl11Definition.setLocationUri("/ws");
